@@ -20,15 +20,15 @@
 
 # Current Position
 
-**Week:** 0  
+**Week:** 1  
 **Day:** 1  
-**Current phase:** Setup and job calibration  
+**Current phase:** Phase 1: How applications work (Weeks 1-2)  
 
 ---
 
 # Overall Progress
 
-* [ ] Week 0 — Setup and job calibration
+* [x] Week 0 — Setup and job calibration
 * [ ] Week 1 — Programming and web basics
 * [ ] Week 2 — JavaScript, Node, and SQL
 * [ ] Week 3 — SQL injection, XSS, authentication
@@ -311,9 +311,9 @@
 # Checkpoints
 
 ## Week 0 Checkpoint
-**Status:** In Progress  
-**Evidence:** Docker, Git, Python, Node, npm verified operational.  
-**Remaining:** crAPI test run, Burp interception check, job-market-notes calibration, remote repo push.
+**Status:** Complete (2026-10-09)
+**Evidence:** Local toolchain verified (Python 3.14 venv, Node 24, Git, Docker); Juice Shop running on localhost:3000; central repository appsec-learning initialized and synced with GitHub; job-market-notes.md calibrated against 15 active enterprise AppSec postings.
+**Remaining:** None. Week 0 closed.
 
 ---
 
