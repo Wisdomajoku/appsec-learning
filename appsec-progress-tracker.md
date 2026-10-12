@@ -432,3 +432,10 @@ Date / Topic: 2026-10-08 / Week 0 Setup & Toolchain Baseline
 What I demonstrated: Host environment diagnostic; verified Python 3.14.6 + venv, Node v24.19, npm 11.19, Git 2.53; resolved Kali dpkg package interruption and installed Docker Engine + Docker Compose; verified Docker container execution via hello-world.
 What I got wrong: Subshell suspension when running newgrp with stacked commands; attempting to install debian docker-compose-plugin rather than Kali native docker-compose package.
 Next session: Deploy Juice Shop/crAPI targets, verify Burp Suite proxy interception, initialize GitHub remote repo, and begin job market calibration.
+
+### Session 1.1 (October 12, 2026) — Python Defensive Data Structures
+```text
+Date / Topic: 2026-10-12 / Week 1 Day 1 — Python Input Validation & Truthiness Mechanics
+What I demonstrated: Built and executed defensive request parser (labs/day01_input_parser.py); analyzed how Python evaluates truthiness on non-empty strings causing privilege escalation; identified CWE-209 (Info Disclosure) and CWE-400 (DoS) risks stemming from unhandled KeyError and JSONDecodeError crashes; documented layered validation architecture.
+What I got wrong: Initially missed distinguishing string literal "false" from boolean False in conditional truthiness evaluation before walking through Python memory model.
+Next session: Week 1 Day 2 — HTTP Protocol internals: request/response anatomy, headers, cookies, and network-level trust boundaries.
