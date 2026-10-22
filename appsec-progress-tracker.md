@@ -439,3 +439,10 @@ Date / Topic: 2026-10-12 / Week 1 Day 1 — Python Input Validation & Truthiness
 What I demonstrated: Built and executed defensive request parser (labs/day01_input_parser.py); analyzed how Python evaluates truthiness on non-empty strings causing privilege escalation; identified CWE-209 (Info Disclosure) and CWE-400 (DoS) risks stemming from unhandled KeyError and JSONDecodeError crashes; documented layered validation architecture.
 What I got wrong: Initially missed distinguishing string literal "false" from boolean False in conditional truthiness evaluation before walking through Python memory model.
 Next session: Week 1 Day 2 — HTTP Protocol internals: request/response anatomy, headers, cookies, and network-level trust boundaries.
+
+### Session 1.2 (October 22, 2026) — HTTP Protocol Mechanics & Socket Probing
+```text
+Date / Topic: 2026-10-22 / Week 1 Day 2 — HTTP Under the Hood & Protocol Security
+What I demonstrated: Built and executed raw TCP socket engine (labs/day02_raw_http.py) targeting Juice Shop; parsed HTTP/1.1 status lines, CRLF boundaries (\r\n\r\n), and Set-Cookie headers; explained virtual hosting mechanics and Host Header Injection risks; analyzed HttpOnly defense boundaries against XSS session riding; distinguished TCP Errno 111 (connection refused) from Errno 104 (connection reset).
+What I got wrong: Initially encountered Errno 104 due to sending requests before Node.js finished booting inside container; verified container readiness using docker logs.
+Next session: Week 1 Day 3 — Programmatic HTTP with Python `requests` & proxying through Burp Suite.
