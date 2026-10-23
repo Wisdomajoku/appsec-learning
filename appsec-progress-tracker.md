@@ -446,3 +446,10 @@ Date / Topic: 2026-10-22 / Week 1 Day 2 — HTTP Under the Hood & Protocol Secur
 What I demonstrated: Built and executed raw TCP socket engine (labs/day02_raw_http.py) targeting Juice Shop; parsed HTTP/1.1 status lines, CRLF boundaries (\r\n\r\n), and Set-Cookie headers; explained virtual hosting mechanics and Host Header Injection risks; analyzed HttpOnly defense boundaries against XSS session riding; distinguished TCP Errno 111 (connection refused) from Errno 104 (connection reset).
 What I got wrong: Initially encountered Errno 104 due to sending requests before Node.js finished booting inside container; verified container readiness using docker logs.
 Next session: Week 1 Day 3 — Programmatic HTTP with Python `requests` & proxying through Burp Suite.
+
+### Session 1.3 (October 23, 2026) — Scripted HTTP & Burp Proxy Integration
+```text
+Date / Topic: 2026-10-23 / Week 1 Day 3 — Programmatic HTTP Automation via Burp Suite
+What I demonstrated: Built and executed automated session script (labs/day03_scripted_proxy.py); routed Python requests through Burp Suite proxy (127.0.0.1:8080); analyzed TLS verification failure mechanics and CWE-295 risks associated with verify=False; contrasted stateless ad-hoc requests against persistent requests.Session() cookie handling; inspected raw programmatic requests inside Burp HTTP history.
+What I got wrong: Initially anticipated that raw scripts would be accepted over HTTPS proxies without understanding that Python rejects Burp's custom CA certificate by default.
+Next session: Week 1 Day 4 — Flask backend basics: Python functions, decorators, and routing parameters.
