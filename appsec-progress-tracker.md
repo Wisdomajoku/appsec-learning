@@ -453,3 +453,10 @@ Date / Topic: 2026-10-23 / Week 1 Day 3 — Programmatic HTTP Automation via Bur
 What I demonstrated: Built and executed automated session script (labs/day03_scripted_proxy.py); routed Python requests through Burp Suite proxy (127.0.0.1:8080); analyzed TLS verification failure mechanics and CWE-295 risks associated with verify=False; contrasted stateless ad-hoc requests against persistent requests.Session() cookie handling; inspected raw programmatic requests inside Burp HTTP history.
 What I got wrong: Initially anticipated that raw scripts would be accepted over HTTPS proxies without understanding that Python rejects Burp's custom CA certificate by default.
 Next session: Week 1 Day 4 — Flask backend basics: Python functions, decorators, and routing parameters.
+
+### Session 1.4 (October 29, 2026) — Backend Routing & Parameter Security
+```text
+Date / Topic: 2026-10-29 / Week 1 Day 4 — Flask Routing Architecture & Parameter Boundaries
+What I demonstrated: Built and executed Flask routing server (labs/day04_flask_routing.py); analyzed pre-execution filtering mechanics where typed converters (<int:id>) reject non-numeric payloads at the router layer before functions execute; identified how integer IDs facilitate automated sequential enumeration; analyzed side-channel timing attack mechanics; diagnosed root cause of IDOR/BOLA (omitting ownership authorization checks between source and sink).
+What I got wrong: Initially assumed that a route-level 404 meant the view function executed and failed validation internally, rather than recognizing that Flask's router blocked execution before the function was ever entered.
+Next session: Week 1 Day 5 — Flask state handling, headers, query parameters, and SQLite database connectivity.
