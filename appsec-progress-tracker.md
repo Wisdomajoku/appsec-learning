@@ -460,3 +460,10 @@ Date / Topic: 2026-10-29 / Week 1 Day 4 — Flask Routing Architecture & Paramet
 What I demonstrated: Built and executed Flask routing server (labs/day04_flask_routing.py); analyzed pre-execution filtering mechanics where typed converters (<int:id>) reject non-numeric payloads at the router layer before functions execute; identified how integer IDs facilitate automated sequential enumeration; analyzed side-channel timing attack mechanics; diagnosed root cause of IDOR/BOLA (omitting ownership authorization checks between source and sink).
 What I got wrong: Initially assumed that a route-level 404 meant the view function executed and failed validation internally, rather than recognizing that Flask's router blocked execution before the function was ever entered.
 Next session: Week 1 Day 5 — Flask state handling, headers, query parameters, and SQLite database connectivity.
+
+### Session 1.5 (November 10, 2026) — Flask Database Flow & Parameterization
+```text
+Date / Topic: 2026-11-10 / Week 1 Day 5 — Flask Request State & SQLite Database Integration
+What I demonstrated: Built and executed database-backed Flask application (labs/day05_flask_db.py); analyzed the Source-to-Sink data flow from request.args through to cursor.execute(); explained the two-channel mechanism of parameterized queries vs. single-channel string concatenation; identified CSRF and crawler-driven data corruption risks when state-changing operations are mapped to GET requests.
+What I got wrong: Initially framed state-changing GET requests primarily as an authentication concern rather than analyzing HTTP method safety (idempotency), web crawler prefetching risks, and CSRF image-tag exploitation vectors.
+Next session: Week 1 Day 6 — Week 1 Synthesis, end-to-end source tracing exercise, and demonstrated skills review.
