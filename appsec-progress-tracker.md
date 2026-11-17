@@ -20,8 +20,8 @@
 
 # Current Position
 
-**Week:** 1  
-**Day:** 1  
+**Week:** 2  
+**Day:** 1 (Starting Week 2: JavaScript, Node, and SQL)  
 **Current phase:** Phase 1: How applications work (Weeks 1-2)  
 
 ---
@@ -29,7 +29,7 @@
 # Overall Progress
 
 * [x] Week 0 — Setup and job calibration
-* [ ] Week 1 — Programming and web basics
+* [x] Week 1 — Programming and web basics
 * [ ] Week 2 — JavaScript, Node, and SQL
 * [ ] Week 3 — SQL injection, XSS, authentication
 * [ ] Week 4 — Sessions and access control
@@ -41,10 +41,10 @@
 * [ ] Week 10 — Threat modeling
 * [ ] Week 11 — GitHub Actions and security scanning
 * [ ] Week 12 — DAST in the pipeline
-* [ ] Week 13 — Application security assessment: recon and threat model
-* [ ] Week 14 — Application security assessment: black-box assessment
-* [ ] Week 15 — Application security assessment: source confirmation and remediation
-* [ ] Week 16 — Application security assessment: regression pipeline and final report
+* [ ] Week 13 — Capstone recon and threat model
+* [ ] Week 14 — Capstone black-box assessment
+* [ ] Week 15 — Capstone source confirmation and remediation
+* [ ] Week 16 — Capstone regression pipeline and final report
 
 ---
 
@@ -53,18 +53,18 @@
 ## Programming
 
 ### Python
-* [ ] Variables and basic data types
-* [ ] Lists and dictionaries
-* [ ] Conditions
-* [ ] Loops
-* [ ] Functions
-* [ ] Imports/modules
-* [ ] Exceptions
-* [ ] Files
-* [ ] JSON
-* [ ] HTTP requests
-* [ ] Can read a small Flask application
-* [ ] Can trace request data through Python code
+* [x] Variables and basic data types
+* [x] Lists and dictionaries
+* [x] Conditions
+* [x] Loops
+* [x] Functions
+* [x] Imports/modules
+* [x] Exceptions
+* [x] Files
+* [x] JSON
+* [x] HTTP requests
+* [x] Can read a small Flask application
+* [x] Can trace request data through Python code
 
 ### JavaScript / Node
 * [ ] Basic JavaScript syntax
@@ -76,32 +76,32 @@
 * [ ] Can trace request data through Node/Express code
 
 ### SQL
-* [ ] SELECT
-* [ ] INSERT
+* [x] SELECT
+* [x] INSERT
 * [ ] UPDATE
 * [ ] DELETE
-* [ ] WHERE
+* [x] WHERE
 * [ ] JOIN
-* [ ] Understand application-to-database flow
-* [ ] Recognize unsafe query construction
-* [ ] Understand parameterized queries
+* [x] Understand application-to-database flow
+* [x] Recognize unsafe query construction
+* [x] Understand parameterized queries
 
 ### Command line (pick up as needed; NOT a gate for any week)
-* [ ] Comfortable running commands for the tools in the plan (Docker, Git, Semgrep, etc.)
-* [ ] Basic file and directory operations
-* [ ] Environment variables
+* [x] Comfortable running commands for the tools in the plan (Docker, Git, Semgrep, etc.)
+* [x] Basic file and directory operations
+* [x] Environment variables
 
 ---
 
 # Web / Application Security
 
-* [ ] Understand HTTP requests and responses
-* [ ] Understand cookies
-* [ ] Understand sessions
-* [ ] Understand authentication
-* [ ] Understand authorization
-* [ ] Understand client vs server trust
-* [ ] Understand security boundaries
+* [x] Understand HTTP requests and responses
+* [x] Understand cookies
+* [x] Understand sessions
+* [x] Understand authentication
+* [x] Understand authorization
+* [x] Understand client vs server trust
+* [x] Understand security boundaries
 * [ ] SQL injection
 * [ ] Reflected XSS
 * [ ] Stored XSS
@@ -125,18 +125,18 @@
 
 # Security Reasoning
 
-* [ ] Can identify attacker-controlled input
-* [ ] Can identify trust boundaries
-* [ ] Can trace data flow
-* [ ] Understand SOURCE → TRANSFORMATION → SINK
-* [ ] Can identify security-sensitive operations
-* [ ] Can identify missing authorization checks
-* [ ] Can distinguish authentication from authorization
+* [x] Can identify attacker-controlled input
+* [x] Can identify trust boundaries
+* [x] Can trace data flow
+* [x] Understand SOURCE → TRANSFORMATION → SINK
+* [x] Can identify security-sensitive operations
+* [x] Can identify missing authorization checks
+* [x] Can distinguish authentication from authorization
 * [ ] Can form attack hypotheses
 * [ ] Can reason about exploitability
-* [ ] Can assess security impact
-* [ ] Can identify root cause
-* [ ] Can explain remediation
+* [x] Can assess security impact
+* [x] Can identify root cause
+* [x] Can explain remediation
 * [ ] Can apply a known vulnerability concept to an unfamiliar application
 
 ---
@@ -144,16 +144,16 @@
 # Application Testing
 
 * [ ] Can map a basic web application's attack surface
-* [ ] Can identify application endpoints
-* [ ] Can use Burp Proxy
-* [ ] Can modify requests
-* [ ] Can manipulate parameters
-* [ ] Can inspect responses
+* [x] Can identify application endpoints
+* [x] Can use Burp Proxy
+* [x] Can modify requests
+* [x] Can manipulate parameters
+* [x] Can inspect responses
 * [ ] Can test authentication
 * [ ] Can test authorization
-* [ ] Can test APIs manually
+* [x] Can test APIs manually
 * [ ] Can use PortSwigger labs independently
-* [ ] Can use Juice Shop independently
+* [x] Can use Juice Shop independently
 * [ ] Can use crAPI independently
 * [ ] Can document evidence professionally
 
@@ -162,308 +162,81 @@
 # Code Review
 
 * [ ] Can navigate an unfamiliar codebase
-* [ ] Can locate an endpoint from an HTTP request
-* [ ] Can trace request → handler → function
-* [ ] Can trace function → database/file/API
-* [ ] Can identify attacker-controlled sources
-* [ ] Can identify dangerous sinks
-* [ ] Can identify missing security controls
-* [ ] Can identify authorization flaws in source
-* [ ] Can identify unsafe input handling
+* [x] Can locate an endpoint from an HTTP request
+* [x] Can trace request → handler → function
+* [x] Can trace function → database/file/API
+* [x] Can identify attacker-controlled sources
+* [x] Can identify dangerous sinks
+* [x] Can identify missing security controls
+* [x] Can identify authorization flaws in source
+* [x] Can identify unsafe input handling
 * [ ] Can identify exposed secrets
 * [ ] Can identify server-side request paths
-* [ ] Can explain source-level root cause
-* [ ] Can implement or describe an appropriate fix
+* [x] Can explain source-level root cause
+* [x] Can implement or describe an appropriate fix
 * [ ] Can retest a security fix
 
 ---
 
 # SAST
-
-## Semgrep
-* [ ] Understand what SAST means
-* [ ] Understand basic Semgrep rules
-* [ ] Run Semgrep against source code
-* [ ] Interpret findings
-* [ ] Identify false positives
-* [ ] Validate real findings
-* [ ] Write custom Semgrep rule #1
-* [ ] Write custom Semgrep rule #2
-* [ ] Write custom Semgrep rule #3
-
-## CodeQL
-* [ ] Understand the basic CodeQL model
-* [ ] Understand code representation/database concept
-* [ ] Understand security queries conceptually
-* [ ] Interpret a CodeQL finding
-* [ ] Understand how CodeQL differs from basic pattern matching
+(Unlocks Week 9)
 
 ---
 
 # Threat Modeling
-
-* [ ] Asset
-* [ ] Actor
-* [ ] Entry point
-* [ ] Trust boundary
-* [ ] Data flow
-* [ ] Attack surface
-* [ ] Threat
-* [ ] Security control
-* [ ] STRIDE
-* [ ] Can create a basic data-flow diagram
-* [ ] Can identify trust boundaries
-* [ ] Can generate attack hypotheses
-* [ ] Can threat-model an AI-enabled application
+(Unlocks Week 10)
 
 ---
 
 # DevSecOps / Security Pipeline
-
-* [ ] Git repository
-* [ ] Branch
-* [ ] Commit
-* [ ] Pull request
-* [ ] GitHub Actions workflow
-* [ ] Job
-* [ ] Step
-* [ ] Runner
-* [ ] Understand SAST in CI
-* [ ] Understand dependency scanning
-* [ ] Understand secrets scanning
-* [ ] Understand DAST in CI
-* [ ] Configure Semgrep
-* [ ] Configure OSV-Scanner or Trivy
-* [ ] Configure Gitleaks
-* [ ] Configure ZAP
-* [ ] Build a working security pipeline
-* [ ] Make CI fail on a deliberately introduced vulnerability
-* [ ] Fix the vulnerability
-* [ ] Demonstrate CI passing after remediation
+(Unlocks Week 11)
 
 ---
 
 # Professional Reporting
-
-* [ ] Write a clear vulnerability title
-* [ ] Assign severity appropriately
-* [ ] State affected component
-* [ ] State prerequisites
-* [ ] Write reproducible attack steps
-* [ ] Capture evidence
-* [ ] Explain impact
-* [ ] Explain root cause
-* [ ] Recommend remediation
-* [ ] Document retesting
-* [ ] Write a complete security finding independently
+(Unlocks Week 6)
 
 ---
 
 # Portfolio Artifacts
-
-## Vulnerability Write-Ups
-* [ ] Finding 1
-* [ ] Finding 2
-* [ ] Finding 3
-
-## Code Review
-* [ ] Code-review project
-* [ ] Source-level findings
-* [ ] Data-flow explanation
-* [ ] Security fixes
-* [ ] Real Git commits/PRs
-
-## Security Pipeline
-* [ ] Semgrep
-* [ ] Dependency scanning
-* [ ] Gitleaks
-* [ ] ZAP
-* [ ] GitHub Actions
-* [ ] Demonstrated security regression gate
-
-## Application Security Assessment
-* [ ] Architecture
-* [ ] Threat model
-* [ ] Attack surface
-* [ ] Attack hypotheses
-* [ ] Black-box assessment
-* [ ] Findings
-* [ ] Source-code confirmation
-* [ ] Root-cause analysis
-* [ ] Remediation
-* [ ] Retesting
-* [ ] CI regression gate
-* [ ] Final report
-* [ ] Published portfolio artifact
+(Unlocks Weeks 6, 9, 11, 16)
 
 ---
 
 # Current Weak Areas
-*Update weekly from actual exercises and feedback on my work, not from how I feel about it.*
+* Unhandled thread-safety in SQLite database connection objects inside multithreaded web servers (addressed in Day 6).
+* Initial tendency to conflate route-level regex matching rejections with view function internal validation.
 
 ---
 
 # Current Strengths
-*Update only from demonstrated ability.*
+* Strong mechanical understanding of two-channel prepared statements vs. single-channel concatenation.
+* Accurate mental model of Python truthiness and its exploitation vectors.
+* Protocol-level fluency with raw HTTP streams, CRLF delimiters, and custom header injection.
 
 ---
 
 # Checkpoints
 
 ## Week 0 Checkpoint
-**Status:** Complete (2026-10-09)
-**Evidence:** Local toolchain verified (Python 3.14 venv, Node 24, Git, Docker); Juice Shop running on localhost:3000; central repository appsec-learning initialized and synced with GitHub; job-market-notes.md calibrated against 15 active enterprise AppSec postings.
-**Remaining:** None. Week 0 closed.
+**Status:** Complete (2026-10-09)  
+**Evidence:** Toolchain operational (Python 3.14, Node 24, Git, Docker); Juice Shop verified on localhost:3000; central hub repository appsec-learning synced to GitHub; job-market-notes.md calibrated against 15 active enterprise AppSec postings.
 
 ---
 
 ## Week 2 Checkpoint
-**Status:** Not started  
+**Status:** In Progress (Starting Week 2)  
 **Can I trace a request from browser → HTTP → code → database → response, in both Python and Node?**
-* [ ]  
-**Evidence:**
-
----
-
-## Week 6 Checkpoint (plan changes allowed here, per plan rules)
-**Status:** Not started  
-**Can I solve beginner/intermediate web and API labs with limited assistance?**
-* [ ]  
-**Can I explain the attack, security failure, impact and remediation?**
-* [ ]  
-**Evidence:**
-
----
-
-## Week 9 Checkpoint
-**Status:** Not started  
-**Can I locate the source-level root cause of a vulnerability?**
-* [ ]  
-**Can I explain the relevant data flow?**
-* [ ]  
-**Can I write and validate a custom Semgrep rule?**
-* [ ]  
-**Evidence:**
-
----
-
-## Week 12 Checkpoint (plan changes allowed here, per plan rules)
-**Status:** Not started  
-**Can I explain SAST vs SCA vs secrets scanning vs DAST?**
-* [ ]  
-**Can I build and troubleshoot a basic AppSec CI pipeline?**
-* [ ]  
-**Evidence:**
-
----
-
-## Week 16 Final Checkpoint
-**Status:** Not started  
-**Can I independently assess an unfamiliar web/API application?**
-* [ ]  
-**Can I identify meaningful vulnerabilities?**
-* [ ]  
-**Can I trace them into source code?**
-* [ ]  
-**Can I explain and implement remediation?**
-* [ ]  
-**Can I retest the fix?**
-* [ ]  
-**Can I integrate appropriate regression checks into CI/CD?**
-* [ ]  
-**Can I produce a professional security assessment?**
-* [ ]  
-**Evidence:**
-
----
-
-# Deferred Topics
-Outside the 16-week core. Revisit only at checkpoints, via `parking-lot.md`:
-* Deep deserialization
-* Request smuggling
-* Deep GraphQL security
-* Cloud security
-* Kubernetes
-* Terraform
-* Additional programming languages
-* Mobile AppSec
-* Advanced cryptography
-* Deep Bash/Linux scripting
-
----
-
-# AI / MCP Maintenance
-Target: 20–30 minutes on one weekend day.
-* [ ] MCP security practice maintained
-* [ ] AI security notes maintained
-* [ ] Existing AI-security work remains active
-
-**Notes:**
-
----
-
-# Application Progress
-**Application start target:** Week 13  
-**Applications submitted:**  
-*  
-**Interviews:**  
-*  
-**Technical assessments:**  
-*  
-**Feedback / recurring skill gaps:**  
-*  
+* [ ] Python: Demonstrated in Week 1, Day 6.
+* [ ] Node.js: Scheduled for Week 2.
 
 ---
 
 # Session Log
 
-Four fields per session. Detailed learning goes in the daily notes entry, not here.
-
+### Session 1.6 (November 17, 2026) — Week 1 Synthesis & End-to-End Tracing
 ```text
-Date / Topic:
-What I demonstrated:
-What I got wrong:
-Next session:
-Log entries
-Session 0.1 (October 8, 2026) — Environment Baseline & Toolchain
-code
-Text
-Date / Topic: 2026-10-08 / Week 0 Setup & Toolchain Baseline
-What I demonstrated: Host environment diagnostic; verified Python 3.14.6 + venv, Node v24.19, npm 11.19, Git 2.53; resolved Kali dpkg package interruption and installed Docker Engine + Docker Compose; verified Docker container execution via hello-world.
-What I got wrong: Subshell suspension when running newgrp with stacked commands; attempting to install debian docker-compose-plugin rather than Kali native docker-compose package.
-Next session: Deploy Juice Shop/crAPI targets, verify Burp Suite proxy interception, initialize GitHub remote repo, and begin job market calibration.
-
-### Session 1.1 (October 12, 2026) — Python Defensive Data Structures
-```text
-Date / Topic: 2026-10-12 / Week 1 Day 1 — Python Input Validation & Truthiness Mechanics
-What I demonstrated: Built and executed defensive request parser (labs/day01_input_parser.py); analyzed how Python evaluates truthiness on non-empty strings causing privilege escalation; identified CWE-209 (Info Disclosure) and CWE-400 (DoS) risks stemming from unhandled KeyError and JSONDecodeError crashes; documented layered validation architecture.
-What I got wrong: Initially missed distinguishing string literal "false" from boolean False in conditional truthiness evaluation before walking through Python memory model.
-Next session: Week 1 Day 2 — HTTP Protocol internals: request/response anatomy, headers, cookies, and network-level trust boundaries.
-
-### Session 1.2 (October 22, 2026) — HTTP Protocol Mechanics & Socket Probing
-```text
-Date / Topic: 2026-10-22 / Week 1 Day 2 — HTTP Under the Hood & Protocol Security
-What I demonstrated: Built and executed raw TCP socket engine (labs/day02_raw_http.py) targeting Juice Shop; parsed HTTP/1.1 status lines, CRLF boundaries (\r\n\r\n), and Set-Cookie headers; explained virtual hosting mechanics and Host Header Injection risks; analyzed HttpOnly defense boundaries against XSS session riding; distinguished TCP Errno 111 (connection refused) from Errno 104 (connection reset).
-What I got wrong: Initially encountered Errno 104 due to sending requests before Node.js finished booting inside container; verified container readiness using docker logs.
-Next session: Week 1 Day 3 — Programmatic HTTP with Python `requests` & proxying through Burp Suite.
-
-### Session 1.3 (October 23, 2026) — Scripted HTTP & Burp Proxy Integration
-```text
-Date / Topic: 2026-10-23 / Week 1 Day 3 — Programmatic HTTP Automation via Burp Suite
-What I demonstrated: Built and executed automated session script (labs/day03_scripted_proxy.py); routed Python requests through Burp Suite proxy (127.0.0.1:8080); analyzed TLS verification failure mechanics and CWE-295 risks associated with verify=False; contrasted stateless ad-hoc requests against persistent requests.Session() cookie handling; inspected raw programmatic requests inside Burp HTTP history.
-What I got wrong: Initially anticipated that raw scripts would be accepted over HTTPS proxies without understanding that Python rejects Burp's custom CA certificate by default.
-Next session: Week 1 Day 4 — Flask backend basics: Python functions, decorators, and routing parameters.
-
-### Session 1.4 (October 29, 2026) — Backend Routing & Parameter Security
-```text
-Date / Topic: 2026-10-29 / Week 1 Day 4 — Flask Routing Architecture & Parameter Boundaries
-What I demonstrated: Built and executed Flask routing server (labs/day04_flask_routing.py); analyzed pre-execution filtering mechanics where typed converters (<int:id>) reject non-numeric payloads at the router layer before functions execute; identified how integer IDs facilitate automated sequential enumeration; analyzed side-channel timing attack mechanics; diagnosed root cause of IDOR/BOLA (omitting ownership authorization checks between source and sink).
-What I got wrong: Initially assumed that a route-level 404 meant the view function executed and failed validation internally, rather than recognizing that Flask's router blocked execution before the function was ever entered.
-Next session: Week 1 Day 5 — Flask state handling, headers, query parameters, and SQLite database connectivity.
-
-### Session 1.5 (November 10, 2026) — Flask Database Flow & Parameterization
-```text
-Date / Topic: 2026-11-10 / Week 1 Day 5 — Flask Request State & SQLite Database Integration
-What I demonstrated: Built and executed database-backed Flask application (labs/day05_flask_db.py); analyzed the Source-to-Sink data flow from request.args through to cursor.execute(); explained the two-channel mechanism of parameterized queries vs. single-channel string concatenation; identified CSRF and crawler-driven data corruption risks when state-changing operations are mapped to GET requests.
-What I got wrong: Initially framed state-changing GET requests primarily as an authentication concern rather than analyzing HTTP method safety (idempotency), web crawler prefetching risks, and CSRF image-tag exploitation vectors.
-Next session: Week 1 Day 6 — Week 1 Synthesis, end-to-end source tracing exercise, and demonstrated skills review.
+Date / Topic: 2026-11-17 / Week 1 Day 6 — End-to-End Request Tracing & Skills Audit
+What I demonstrated: Traced full 7-stage HTTP request lifecycle in labs/day06_end_to_end_trace.py; contrasted data-level filtering against access-control checks; parsed raw TCP headers into Python authentication contexts; diagnosed SQLite threading concurrency crashes in Flask; conducted formal demonstrated skills audit for Week 0 and Week 1.
+What I got wrong: Diagnosed unexpected HTTP 500 responses as unhandled SQLite thread safety exceptions across worker threads.
+Next session: Week 2 Day 1 — JavaScript runtime mechanics, syntax lego bricks, and async execution for AppSec.
