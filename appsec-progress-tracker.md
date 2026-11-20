@@ -240,3 +240,10 @@ Date / Topic: 2026-11-17 / Week 1 Day 6 — End-to-End Request Tracing & Skills 
 What I demonstrated: Traced full 7-stage HTTP request lifecycle in labs/day06_end_to_end_trace.py; contrasted data-level filtering against access-control checks; parsed raw TCP headers into Python authentication contexts; diagnosed SQLite threading concurrency crashes in Flask; conducted formal demonstrated skills audit for Week 0 and Week 1.
 What I got wrong: Diagnosed unexpected HTTP 500 responses as unhandled SQLite thread safety exceptions across worker threads.
 Next session: Week 2 Day 1 — JavaScript runtime mechanics, syntax lego bricks, and async execution for AppSec.
+
+### Session 2.1 (November 20, 2026) — JavaScript Runtime Mechanics & Type Juggling
+```text
+Date / Topic: 2026-11-20 / Week 2 Day 1 — JavaScript Syntax Grammar & Event Loop Mechanics
+What I demonstrated: Executed JavaScript runtime experiments in labs/day07_js_mechanics.js; analyzed type coercion exploits using loose equality (==) vs strict equality (===); identified cross-language truthiness differences (JS empty array [] evaluating to true vs Python evaluating to false); contrasted Node.js single-threaded event loop DoS risks against Python multi-threaded worker models.
+What I got wrong: Initially assumed if (items) syntax was invalid rather than recognizing that in JavaScript, evaluating an empty array variable inside an if statement always evaluates to true.
+Next session: Week 2 Day 2 — Building a basic Express.js web server: routing, middleware, and request/response lifecycles.
